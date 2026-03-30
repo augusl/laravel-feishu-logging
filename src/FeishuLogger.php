@@ -67,7 +67,8 @@ class FeishuLogger
             ?? config('feishu-logger.default_token_key');
 
         if (empty($tokenKey)) {
-            return '';
+            $token = config('feishu-logger.token');
+            return $token ? $this->buildWebhookUrl($token) : '';
         }
 
         $token = DB::table('feishu_tokens')
