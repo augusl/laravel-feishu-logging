@@ -5,7 +5,7 @@
 ## Installing
 
 ```shell
-$ composer require nilsir/laravel-feishu-logging -vvv
+$ composer require aaronlei/laravel-feishu-logging
 ```
 
 ## Usage
